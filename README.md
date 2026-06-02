@@ -49,7 +49,7 @@ Opens at `http://localhost:3000`
 docker build -t lms-frontend .
 docker run -p 3000:80 lms-frontend
 ```
-
+## 📁 Project Structure
 📦 Frontend
 ┣ 📂 public/
 ┣ 📂 src/
@@ -69,5 +69,3 @@ docker run -p 3000:80 lms-frontend
 
 <p align="center">Made with ⚛️ by <a href="https://github.com/Sumanjali23">Grace Sumanjali Pagolu</a></p>
 ---
-
-## 📁 Project Structure
