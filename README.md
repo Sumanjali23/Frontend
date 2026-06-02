@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# 🎨 Frontend — React + TypeScript LMS UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A modern React + TypeScript frontend for the Learning Management System, containerised with Docker and served via Nginx.
 
-## Available Scripts
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is the **React TypeScript frontend** for the Learning Management System. It communicates with the Flask backend API and provides interfaces for both students and teachers to manage courses, assignments, and grades.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 👩‍🎓 Student & teacher dashboards
+- 📚 Course browsing and enrollment
+- 📝 Assignment submission interface
+- 🏆 Grade viewing
+- 🎨 Styled with Tailwind CSS
+- 🐳 Dockerised with Nginx for production serving
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run Locally
+```bash
+npm install
+npm start
+```
+Opens at `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Available Scripts
 
-### `npm run eject`
+| Command | Description |
+|---|---|
+| `npm start` | Run in development mode |
+| `npm test` | Launch test runner |
+| `npm run build` | Build for production |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Run with Docker
+```bash
+docker build -t lms-frontend .
+docker run -p 3000:80 lms-frontend
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📦 Frontend
+┣ 📂 public/
+┣ 📂 src/
+┣ 📄 Dockerfile
+┣ 📄 nginx.conf
+┣ 📄 tailwind.config.js
+┣ 📄 tsconfig.json
+┗ 📄 package.json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔗 Related
 
-## Learn More
+- 🔧 [Backend API](https://github.com/Sumanjali23/Backend-)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">Made with ⚛️ by <a href="https://github.com/Sumanjali23">Grace Sumanjali Pagolu</a></p>
+---
+
+## 📁 Project Structure
